@@ -1,5 +1,6 @@
 export type HomeAssistantEntityStateAttributes<T extends object = object> = {
   friendly_name?: string;
+  matter_name?: string;
   unit_of_measurement?: string;
   icon?: string;
   entity_picture?: string;

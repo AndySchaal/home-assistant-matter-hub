@@ -34,6 +34,7 @@ export class BasicInformationServer extends Base {
       hardwareVersionString: ellipse(64, device?.hw_version),
       softwareVersionString: ellipse(64, device?.sw_version),
       nodeLabel:
+        ellipse(32, entity.state?.attributes?.matter_name) ??
         ellipse(32, entity.state?.attributes?.friendly_name) ??
         ellipse(32, entity.entity_id),
       reachable:
